@@ -1,0 +1,13 @@
+name: SpigotEventstPlugin
+version: 1.6
+main: dev.garvis.worldmanager.WorldManagerPlugin
+api-version: 1.20
+commands:
+  worldstatesetup:
+    description: Setup the connection to kafka.
+    usage: /<comamnd> worldName kafkaBrokers kafkaTopic
+    permission: worldmanager.setup
+  worldstate:
+    description: Update the current state of the world.
+    usage: /<command> OPEN|CLOSED|PREMIUM|LOCKED
+    permission: worldmanager.state

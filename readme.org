@@ -1,0 +1,20 @@
+#+title: Minecraft World Manager
+#+author: Dylan Garvis
+#+email: Dylan@Garvis.dev
+
+* Overview
+
+This service will send events to update the current state of the world along with listen for events
+of users approved to join the world and then send a move user request once the world is ready for them
+(whitelisted). If a user leaves the world when the state is not OPEN, the user will be removed from the
+whitelist and will need to re-request access to join.
+
+* Events
+** Incoming
+*** World Join Approved
+** Outgoing
+*** World State Update
+*** User Transfer Request
+
+* Commands
+See *src/main/resources/plugin.yml*.

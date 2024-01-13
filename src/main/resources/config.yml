@@ -1,0 +1,4 @@
+serverName: ""
+currentState: "OPEN"
+kafkaBrokers: ""
+kafkaTopic: ""
